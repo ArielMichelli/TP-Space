@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
+
+/* font-family: 'Aboreto', cursive;
+font-family: 'Bebas Neue', cursive; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: solid red 1px; */
+}
+
+body {
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.resaltado {
+    font-size: 2.5rem;
+}
+
+.portada {
+    width: 100%;
+    height: 90vh;
+    background-image: url('../img/portada-space2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.navbar {
+    height: 120px;
+    padding: 20px;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin: 0 10px;
+}
+
+.menu {
+    margin: 0 10px;
+}
+
+.menu ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu ul li {
+    align-self: baseline;
+    margin: 10px 15px;
+    transition-duration: 1s;
+}
+
+.menu ul li a {
+    color: antiquewhite;
+    margin-bottom: 20px;
+    text-shadow: black 2px 2px;
+}
+
+.menu ul li:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.titulo {
+    color: white;
+    height: 75vh;
+    font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
+    text-shadow: black 5px 5px;
+    display: flex;
+    font-size: 3rem;
+    place-content: center;
+    align-items: center;
+}
+
+/*MISIONS*/
+main {
+    background: linear-gradient(#d58b3671, rgba(0, 0, 0, 1));
+}
+
+.misiones {
+    height: 100%;
+    text-align: center;
+}
+
+.misiones__titulo {
+    font-size: 2rem;
+    color: white;
+}
+
+.misiones__galeria {
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    place-content: center;
+}
+
+.tarjeta__misiones {
+    width: 350px;
+    height: 350px;
+}
+
+.tarjeta__misiones__texto {
+    height: 20%;
+}
+
+.tarjeta__misiones__imagen {
+    width: 100%;
+    height: 80%;
+}
+
+.tarjeta__misiones__imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 250px;
+}
+
+.traje {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    padding: 25px;
+}
+
+.traje__texto {
+    width: 60%;
+    padding: 20px;
+    border: solid white 1px;
+}
+
+.traje__img {
+    width: 40%;
+}
+
+.traje__img img {
+    width: 100%;
+}
+
+.subtitulo {
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 30px 0px;
+}
+
+.especial {
+    margin-top: 0px;
+}
+
+/* ----galeria---- */
+.contenedor__geleria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    width: 80%;
+    gap: 20px;
+    margin: 10px auto;
+}
+
+.galeria__img {
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+}
+
+.galeria__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.imagen-ancha {
+    columns: span 3;
+}
+
+.galeria__img:hover {
+    transform: scale(1.07);
+    border: solid white 1px;
+}
+
+/* ----Tecnologia---- */
+.contenedor__tecnologia {
+    display: flex;
+    height: 450px;
+    width: 90%;
+    max-width: 1300px;
+    margin: 20px auto;
+}
+
+.contenedor__tecnologia__img {
+    width: 70%;
+}
+
+.contenedor__tecnologia__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor__tecnologia__texto {
+    width: 30%;
+    padding: 20px;
+}
+.contenedor__tecnologia__texto h3 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
