@@ -11,7 +11,7 @@ font-family: 'Bebas Neue', cursive; */
 
 body {
     color: white;
-    font-family: 'Bebas Neue', cursive;
+    
 }
 
 a {
@@ -20,6 +20,9 @@ a {
 
 li {
     list-style: none;
+}
+p{
+    font-size: 1.1rem;
 }
 
 .resaltado {
@@ -85,7 +88,7 @@ li {
     align-items: center;
 }
 
-/*MISIONS*/
+/* =========MISIONS========= */
 main {
     background: linear-gradient(#d58b3671, rgba(0, 0, 0, 1));
 }
@@ -126,6 +129,11 @@ main {
     height: 100%;
     object-fit: cover;
     border-radius: 250px;
+    transition-duration: 0.6s;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 1px #000000;
+}
+.tarjeta__misiones__imagen img:hover{
+    transform: scale(1.1);
 }
 
 .traje {
@@ -138,7 +146,8 @@ main {
 .traje__texto {
     width: 60%;
     padding: 20px;
-    border: solid white 1px;
+    border: solid brown 1px;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 1px #000000;
 }
 
 .traje__img {
@@ -154,6 +163,11 @@ main {
     text-align: center;
     text-decoration: underline;
     margin: 30px 0px;
+    text-shadow: 2px 3px 5px brown;
+    transition-duration: .6s;
+}
+.subtitulo:hover{
+    color: brown;
 }
 
 .especial {
@@ -166,7 +180,7 @@ main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 300px);
     width: 80%;
-    gap: 20px;
+    gap: 25px;
     margin: 10px auto;
 }
 
@@ -174,6 +188,7 @@ main {
     width: 100%;
     height: 100%;
     transition-duration: 1s;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 1px #000000;
 }
 
 .galeria__img img {
@@ -195,13 +210,15 @@ main {
 .contenedor__tecnologia {
     display: flex;
     height: 450px;
-    width: 90%;
+    width: 80%;
     max-width: 1300px;
     margin: 20px auto;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 1px #000000;
 }
 
 .contenedor__tecnologia__img {
-    width: 70%;
+    width: 60%;
+    box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 5px 1px #000000;
 }
 
 .contenedor__tecnologia__img img {
@@ -211,11 +228,36 @@ main {
 }
 
 .contenedor__tecnologia__texto {
-    width: 30%;
+    width: 40%;
     padding: 20px;
+    
 }
+
 .contenedor__tecnologia__texto h3 {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
+}
+
+/* ----Footer---- */
+.footer{
+    background-color: black;
+    height: auto;
+    display: flex;
+    border-top: 1px white solid ;
+    justify-content:space-between;
+}
+.footer .redes-sociales{
+    font-size: 2rem;
+    align-self: center;
+    margin: 0 20px;
+}
+.footer .redes-sociales i{
+    margin: 0 20px;
+    color: antiquewhite;
+    transition-duration: 1s;
+}
+.footer .redes-sociales i:hover{
+    color: brown;
+    font-size: 2.5rem;
 }
