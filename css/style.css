@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
 /* font-family: 'Aboreto', cursive;
 font-family: 'Bebas Neue', cursive; */
@@ -29,6 +30,10 @@ p {
     font-size: 2.5rem;
 }
 
+.resaltado:hover {
+    text-decoration: none;
+}
+
 .portada {
     width: 100%;
     height: 90vh;
@@ -45,6 +50,7 @@ p {
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.205);
 }
 
 .logo {
@@ -71,16 +77,19 @@ p {
     margin-bottom: 20px;
     text-shadow: black 2px 2px;
     transition-duration: 1s;
+    font-family: 'Bungee Spice', cursive;
 }
 
+
 .menu ul li:hover {
-    text-decoration: underline;
+    border-bottom: orange solid 2px;
+    border-top: orange solid 2px;
     transform: scale(1.2);
 }
 
-.menu ul li a:hover {
+/* .menu ul li a:hover {
     color: rgba(251, 255, 0, 0.7);
-}
+} */
 
 .titulo {
     color: white;
@@ -329,7 +338,17 @@ main {
     color: brown;
     font-size: 2.5rem;
 }
-.copyright{
+
+.footer-nav .navbar .menu {
+    align-self: center;
+    font-size: 1.2rem;
+}
+
+.footer-nav .resaltado {
+    font-size: 2rem;
+}
+
+.copyright {
     text-align: center;
     background-color: black;
     color: antiquewhite;
