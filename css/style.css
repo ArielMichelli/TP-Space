@@ -80,16 +80,11 @@ p {
     font-family: 'Bungee Spice', cursive;
 }
 
-
 .menu ul li:hover {
     border-bottom: orange solid 2px;
     border-top: orange solid 2px;
     transform: scale(1.2);
 }
-
-/* .menu ul li a:hover {
-    color: rgba(251, 255, 0, 0.7);
-} */
 
 .titulo {
     color: white;
@@ -324,7 +319,7 @@ main {
     align-self: center;
     margin: 0 20px;
     padding: 15px;
-    border: 1px solid white;
+    border: 1px solid antiquewhite;
 
 }
 
@@ -335,7 +330,7 @@ main {
 }
 
 .footer .redes-sociales i:hover {
-    color: brown;
+    color: orange;
     font-size: 2.5rem;
 }
 
