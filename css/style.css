@@ -139,6 +139,36 @@ main {
     transform: scale(1.03);
 }
 
+@media (max-width:900px) {
+    .titulo {
+        font-size: 2.4rem;
+    }
+
+    .navbar {
+        height: auto;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:480px) {
+    .titulo {
+        font-size: 1.5rem;
+    }
+}
+
 /* ==================MISIONS================== */
 .misiones {
     text-align: center;
@@ -200,10 +230,6 @@ main {
     width: 100%;
 }
 
-* {
-    border: solid red 1px;
-}
-
 /* ==================GALERIA================== */
 .contenedor__geleria {
     display: grid;
@@ -212,6 +238,30 @@ main {
     width: 80%;
     gap: 25px;
     margin: 10px auto;
+}
+
+@media (max-width:1200px) {
+    .contenedor__geleria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 220px);
+        gap: 20px;
+    }
+
+    .imagen-ancha {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width:480px) {
+    .contenedor__geleria {
+        display: block;
+        margin: 15px auto;
+    }
+
+    .galeria__img {
+        height: 150px;
+        margin: 10px auto;
+    }
 }
 
 .galeria__img {
@@ -247,13 +297,32 @@ main {
 .contenedor__tecnologia__texto {
     width: 40%;
     padding: 20px;
-
 }
 
 .contenedor__tecnologia__texto h3 {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 20px;
+}
+
+@media (max-width:768px) {
+    .contenedor__tecnologia {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contenedor__tecnologia__img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .contenedor__tecnologia__texto {
+        width: 100%;
+        padding: 20px;
+    }
+
 }
 
 /* ================PLANETAS================ */
@@ -297,6 +366,27 @@ main {
 .contenedor__planetas__img img:hover {
     transform: scale(1.2);
 }
+
+@media (max-width:768px) {
+    .contenedor__planetas {
+        width: 45%;
+    }
+
+    .contenedor__planetas__texto h3 {
+        margin: 10px auto;
+        width: auto;
+        font-size: 2rem;
+    }
+
+    .contenedor__planetas__texto {
+        height: 10%;
+    }
+
+    .contenedor__planetas__img {
+        height: 90%;
+    }
+}
+
 
 /* ================FOOTER================ */
 .footer {
