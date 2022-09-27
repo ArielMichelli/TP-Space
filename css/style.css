@@ -43,20 +43,6 @@ main {
     transition-duration: .6s;
 }
 
-@media (max-width:768px) {
-    .subtitulo {
-        font-size: 2.5rem;
-        margin: 40px auto;
-    }
-}
-
-@media (max-width:480px) {
-    .subtitulo {
-        font-size: 2rem;
-        margin: 20px auto;
-    }
-}
-
 .subtitulo:hover {
     color: brown;
 }
@@ -78,7 +64,6 @@ main {
     height: 100%;
     object-fit: cover;
 }
-
 
 /* ================NAVBAR================ */
 .portada {
@@ -135,7 +120,7 @@ main {
 
 .titulo {
     color: white;
-    height: 75vh;
+    height: 70%;
     font-family: Georgia, 'Times New Roman', Times, serif, Courier, monospace;
     text-shadow: black 5px 5px;
     display: flex;
@@ -200,22 +185,6 @@ main {
     justify-self: center;
 }
 
-@media (max-width:768px) {
-    .titulo {
-        font-size: 2rem;
-    }
-
-    .navbar ul {
-        display: block;
-    }
-}
-
-@media (max-width:480px) {
-    .titulo {
-        font-size: 1.5rem;
-    }
-}
-
 /* ==================MISIONS================== */
 .misiones {
     text-align: center;
@@ -278,34 +247,6 @@ main {
     width: 100%;
 }
 
-@media (max-width:768px) {
-    .traje {
-        display: block;
-        margin: 30px auto;
-        width: 90%;
-        padding: 10px;
-    }
-
-    .traje__texto {
-        width: 100%;
-    }
-
-    .traje__texto p {
-        font-size: 1rem;
-    }
-
-    .traje__img {
-        width: 80%;
-        margin: 5px auto;
-    }
-
-    .traje__img img {
-        max-height: 350px;
-    }
-}
-
-
-
 /* ==================GALERIA================== */
 .contenedor__geleria {
     display: grid;
@@ -314,30 +255,6 @@ main {
     width: 80%;
     gap: 25px;
     margin: 10px auto;
-}
-
-@media (max-width:1200px) {
-    .contenedor__geleria {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 220px);
-        gap: 20px;
-    }
-
-    .imagen-ancha {
-        grid-column: span 2;
-    }
-}
-
-@media (max-width:480px) {
-    .contenedor__geleria {
-        display: block;
-        margin: 15px auto;
-    }
-
-    .galeria__img {
-        height: 150px;
-        margin: 10px auto;
-    }
 }
 
 .galeria__img {
@@ -381,26 +298,6 @@ main {
     margin-bottom: 20px;
 }
 
-@media (max-width:768px) {
-    .contenedor__tecnologia {
-        display: block;
-        width: 100%;
-        height: auto;
-        padding: 20px;
-    }
-
-    .contenedor__tecnologia__img {
-        width: 100%;
-        height: 350px;
-    }
-
-    .contenedor__tecnologia__texto {
-        width: 100%;
-        padding: 20px;
-    }
-
-}
-
 /* ================PLANETAS================ */
 .planetas {
     display: flex;
@@ -441,26 +338,6 @@ main {
 
 .contenedor__planetas__img img:hover {
     transform: scale(1.2);
-}
-
-@media (max-width:768px) {
-    .contenedor__planetas {
-        width: 45%;
-    }
-
-    .contenedor__planetas__texto h3 {
-        margin: 10px auto;
-        width: auto;
-        font-size: 2rem;
-    }
-
-    .contenedor__planetas__texto {
-        height: 10%;
-    }
-
-    .contenedor__planetas__img {
-        height: 90%;
-    }
 }
 
 
@@ -507,7 +384,105 @@ main {
     color: antiquewhite;
 }
 
+/* ================PARTE RESPONSIVE================ */
+@media (max-width:1200px) {
+
+    /*galeria*/
+    .contenedor__geleria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 220px);
+        gap: 20px;
+    }
+
+    .imagen-ancha {
+        grid-column: span 2;
+    }
+}
+
 @media (max-width:768px) {
+
+    .subtitulo {
+        font-size: 2.5rem;
+        margin: 30px auto;
+    }
+
+    .especial {
+        margin-top: 0px;
+    }
+
+    .titulo {
+        height: 50%;
+        font-size: 2rem;
+    }
+
+    .navbar ul {
+        display: block;
+    }
+
+    /*traje*/
+    .traje {
+        display: block;
+        margin: 30px auto;
+        width: 90%;
+        padding: 10px;
+    }
+
+    .traje__texto {
+        width: 100%;
+    }
+
+    .traje__texto p {
+        font-size: 1rem;
+    }
+
+    .traje__img {
+        width: 80%;
+        margin: 5px auto;
+        margin-top: 20px;
+    }
+
+    .traje__img img {
+        max-height: 350px;
+    }
+
+    /*Tecnologia*/
+    .contenedor__tecnologia {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .contenedor__tecnologia__img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .contenedor__tecnologia__texto {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /*Planetas*/
+    .contenedor__planetas {
+        width: 45%;
+    }
+
+    .contenedor__planetas__texto h3 {
+        margin: 10px auto;
+        width: auto;
+        font-size: 2rem;
+    }
+
+    .contenedor__planetas__texto {
+        height: 10%;
+    }
+
+    .contenedor__planetas__img {
+        height: 90%;
+    }
+
+    /*footer*/
     .footer-nav .navbar .menu {
         font-size: 1.2rem;
     }
@@ -518,6 +493,34 @@ main {
 }
 
 @media (max-width:480px) {
+    .subtitulo {
+        font-size: 2rem;
+        margin: 20px auto;
+    }
+
+    .especial {
+        margin-top: 0px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+    .menu ul{
+        text-align: center;
+    }
+
+    /*galeria*/
+    .contenedor__geleria {
+        display: block;
+        margin: 15px auto;
+    }
+
+    .galeria__img {
+        height: 150px;
+        margin: 20px auto;
+    }
+
+    /*footer*/
     .footer .redes-sociales i {
         margin: 20px auto;
         font-size: 1.4rem;
@@ -530,4 +533,5 @@ main {
     .footer-nav .resaltado {
         font-size: 1.2rem;
     }
+
 }
