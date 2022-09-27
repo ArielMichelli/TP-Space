@@ -377,16 +377,18 @@ main {
     background-color: black;
     height: auto;
     display: flex;
-    border-top: 1px white solid;
+    border-top: 10px double rgba(255, 255, 255, 0.7);
     justify-content: space-between;
 }
 
 .footer .redes-sociales {
+    display: flex;
+    flex-wrap: nowrap;
     font-size: 2rem;
+    width: auto;
     align-self: center;
-    margin: 0 20px;
-    padding: 15px;
-    border: 1px solid antiquewhite;
+    margin: 5px auto;
+    padding: 7px;
 }
 
 .footer .redes-sociales i {
@@ -543,6 +545,15 @@ main {
     .footer-nav .resaltado {
         font-size: 1.5rem;
     }
+
+    .footer .redes-sociales i {
+        font-size: 1.5rem;
+    }
+
+    .footer .redes-sociales {
+        margin: 10px auto;
+    }
+
 }
 
 /* -----Mobile----- */
@@ -579,15 +590,12 @@ main {
 
     /*footer*/
     .footer .redes-sociales i {
-        margin: 20px auto;
-        font-size: 1.4rem;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 1.3rem;
     }
 
     .footer-nav .navbar .menu {
         font-size: 0.8rem;
-    }
-
-    .footer-nav .resaltado {
-        font-size: 1.2rem;
     }
 }
