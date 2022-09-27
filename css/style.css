@@ -377,7 +377,7 @@ main {
     background-color: black;
     height: auto;
     display: flex;
-    border-top: 10px double rgba(255, 255, 255, 0.7);
+    border-top: 7px double white;
     justify-content: space-between;
 }
 
@@ -553,7 +553,6 @@ main {
     .footer .redes-sociales {
         margin: 10px auto;
     }
-
 }
 
 /* -----Mobile----- */
@@ -589,13 +588,13 @@ main {
     }
 
     /*footer*/
+    .footer-nav .navbar .menu {
+        font-size: 0.8rem;
+    }
+
     .footer .redes-sociales i {
         margin: 10px auto;
         padding: 5px;
         font-size: 1.3rem;
-    }
-
-    .footer-nav .navbar .menu {
-        font-size: 0.8rem;
     }
 }
