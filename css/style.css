@@ -556,6 +556,10 @@ main {
     .footer .redes-sociales {
         margin: 10px auto;
     }
+
+    .copyright p {
+        font-size: 1rem;
+    }
 }
 
 /* -----Mobile----- */
@@ -599,5 +603,9 @@ main {
         margin: 10px auto;
         padding: 5px;
         font-size: 1.3rem;
+    }
+
+    .copyright p {
+        font-size: 0.8rem;
     }
 }
