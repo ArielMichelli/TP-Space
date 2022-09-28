@@ -138,6 +138,7 @@ main {
     transform: scale(1.03);
 }
 
+/* ---MEDIA especial para navbar y titulo--- */
 @media (max-width:1100px) {
     .titulo {
         font-size: 2.4rem;
@@ -160,6 +161,7 @@ main {
     }
 }
 
+/* ---Posicionamiento del navbar--- */
 .centro {
     grid-area: centro;
     justify-self: center;
@@ -284,6 +286,7 @@ main {
     max-width: 1300px;
     margin: 30px auto;
     box-shadow: var(--sombra);
+    flex-wrap: wrap;
 }
 
 .contenedor__tecnologia h3 {
